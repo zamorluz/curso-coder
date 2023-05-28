@@ -1,0 +1,179 @@
+/*
+ * Reinicia todo y establece los valores defaults.
+ */
+* {
+    margin: 0; /* Quita los margenes por defecto*/    
+    padding: 0; /* Quita los rellenos por defecto*/ 
+    box-sizing: border-box; /* Establece que el tamaño de la caja se basa en la caja del borde (incluye border y padding) */
+    position: relative; /* la posición es relativa al flujo general de la pagina*/
+    font-family: 'Open Sans', sans-serif; /* Usamos la tipografia de google setteada en el head*/
+    font-size:16px;/* Establecemos el tamaño  de fuente predeterminado*/
+    z-index: 1;/* la profundidad base de todo es 1 */
+    color:black; /* el color de la fuente es negro por defecto */
+    outline:none; /* nada tiene el borde de enfoque predeterminado */
+    text-decoration: none; /*Quita las decoraciones a los textos*/
+    background-position: center center; /* las imagenes de fondo estaran centradas por defecto */
+    background-size: cover; /* las imagenes de fondo cubriran todo el elemento */
+    vertical-align: middle; /* Alineamos verticalmente al medio */
+}
+a{
+    color: inherit;/* los links tendran el color que indica su padre */
+}
+/*Definimos el tamaño de la fuente de los encabezados */
+h1{font-size: 30px;}
+h2{font-size: 27px;}
+h3{font-size: 24px;}
+h4{font-size: 23px;}
+h5{font-size: 20px;}
+h6{font-size: 17px;}
+img{
+    max-width: 100%;
+}
+/* creamos .box, para tener el contenido centrado */
+.box{ 
+    width:1200px; /* establecemos el ancho de lo que estara en la caja */
+    margin: auto; /* centramos la caja horizontamente*/
+}
+main{
+    margin-top:70px;
+    background-image: url(../images/hedgehog-1.jpg);
+    background-attachment: fixed; /*La imagen de fondo no se va a mover*/
+}
+main > section,
+main > article{
+    margin-top:50px!Important; /* Separamos las secciones unas de otras */
+}
+header{
+    border-bottom: 1px solid rgba(1,1,1,0.75);
+    background-color: white;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+article{
+    background-color:white;
+    padding:1em;
+    margin:1em;
+}
+header > .box{
+    height: inherit;
+}
+header > .box > #logo,
+header > .box > #menu{
+    display: inline-block;
+    /* Centramos verticalmente en base a la altura del elemento padre */
+    top:50%;
+    transform:translateY(-50%);
+}
+header > .box > #logo{
+    width:25%;
+}
+header > .box > #menu{
+    width:70%;
+    padding-left: 100px;
+    text-align:right;
+}
+header > .box > #logo > h1{
+    display:inline-block; /* volvemos el encabezado un elemento lineal para que pueda ocupar menos espacio*/
+    width:auto;
+}
+header > .box > #menu > ul > li{
+    display:inline-block;   
+    text-align:center;
+    padding:10px;
+    border:1px solid rgba(1,1,1,0.5);
+    border-radius:5px;
+    margin: 2px;
+}
+main > #searcher{
+    text-align:center;
+    border-bottom: 1px solid black ;
+    padding:20px;
+    width: 100%;
+    margin-top:0px;
+    background-color:rgba(255,255,255,0.2)
+}
+main > #searcher > form > input,
+main > #searcher > form > button{
+    width:20%;
+    display: inline-block;
+    background-color:white;
+    padding:5px;
+    border:1px solid black;
+}
+main > #video{
+    width:100%;
+    height: calc(100vh - 70px); /*Establecemos la altura al tamaño de la pantalla menos los 70px del menu*/
+}
+main > #video > .box{
+    top:50%;
+    transform: translateY(-50%);
+    align-items: center;
+}
+main > #video > .box > video{
+    width:40%;
+    display: inline-block;
+}
+main > #video > .box > div{
+    width: calc(60% - 2em);
+    font-size:30px;
+    display: inline-block;
+    padding:20px;
+    background-color:white;
+    margin:1em;
+
+}
+.sidebar-content{
+    width:70%;
+    display:inline-block;
+    margin:20px 0;
+    vertical-align: top;
+}
+.sidebar{
+    width:30%;
+    display: inline-block;
+    margin:20px 0;
+    padding-left:20px;
+    vertical-align: top;
+}
+main > #searcher > form > button{
+    width:10%;
+}
+footer{
+    border-top:1px solid black;
+}
+footer > .footer-cta{
+    padding:20px;
+    text-align: center;
+}
+footer > .footer-cta > a{
+    display:inline-block;
+    padding:5px 20px;
+    border:1px solid black;
+    border-radius: 30px;
+}
+footer > .footer-company{
+    background-color: #aaa;
+    text-align: center;
+    padding:20px;
+}
+footer > .footer-copyright{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:10px;
+    font-size: 12px;
+}
+
+footer> .footer-company{
+    text-align: right;
+}
+
+
+
+
+
+
