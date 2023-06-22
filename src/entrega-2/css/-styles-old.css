@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+header{
+    background-color: cornsilk
+    /* grid-area: header; */
+}
+
+nav{
+    background-color: blue;
+    grid-area: nav;
+}
+
+footer{
+    background-color: rgb(0, 238, 255);
+    grid-area: footer;
+}
+
+main{ background-color: darkgray;
+}
+/* 
+section,
+aside{
+    background-color: blueviolet; */
+
+
+
+
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    background: #a0e1eb;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background: coral;
+}
+
+.logo {
+    align-items: center;
+    width: 150px;
+}
+
+
+
+/* .grilla-nosotros */
+
+.contenedor {
+
+    display: grid;
+    grid-template-columns: 1fr 350px;
+}
+
+
+.noticias {
+    grid-area: noticias;
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
+
+/* aside {
+    grid-area: aside;
+} */
+ 
+
+
+.tienda .imagen-erizo{
+
+    width: 500px;
+object-fit: cover;
+
+}
+
+.imagen-erizo {
+    padding: 2rem;
+    width: 60%;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: repeat (auto,1fr);
+}
+ 
+.contenedor > div,
+.contenedor .contenido,
+.contenedor .footer,
+.contenedor .sidebar,
+.contenedor .tienda {
+    
+    background-color: rgb(10, 132, 102);
+    padding: 20px;
+    border-radius: 4px;
+    
+}
+
+/* .contenedor .header {
+    background-color: black;
+    color: bisque;
+    grid-column-start: 1;
+    grid-column-end: -1;
+} */
+/* para declarar el header arriba con grid */
+
+.contenedor.contenido {
+    grid-column: span 2;
+}
+
+.contenedor .sidebar {
+    grid-column: 3  4;
+    background: crimson;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+

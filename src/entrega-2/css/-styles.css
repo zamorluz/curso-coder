@@ -1,0 +1,123 @@
+.nav-link:hover{
+    color:greenyellow!important;
+}
+
+main {
+    background-image: url(../images/rabbit-green.jpg);
+    background-size: cover;
+    padding-bottom: 50px;
+}
+footer .footer-cta {
+    background-color: #666;
+}
+.main-home {
+    background-image: url(../images/erizo-sol.jpg);
+    background-size: cover;
+}
+
+.main-contacto{
+    background-image: url(../images/nepal-azul.jpg);
+}
+
+.main-tienda{
+    background-image: url(../images/rojo.jpg);
+}
+
+.vertical-middle{
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.video video {
+    width:100%;
+}
+.row-grid{
+    display:grid;
+    align-items: center;
+    grid-auto-rows: 1fr;
+    width:100%;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+}
+.grid-item {
+    background-color: aqua;
+    font-family: sans-serif;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border:solid 1px blanchedalmond
+
+    
+}
+
+.grid-item:hover {
+    filter: opacity (0.8);
+    transform: scale(1.05);
+    
+}
+
+.grid-container {
+    gap: 10px;
+    padding: 10px;
+
+}
+.imagen-animal {
+    background-size:cover;
+    background-position: center center;
+    width:100%;
+    padding-top:100%;
+}
+
+
+.imagen-animal-1 {
+    background-image: url(../images/bebe-erizo.jpeg);
+}
+.imagen-animal-2 {
+    background-image: url(../images/erizo-arbol.jpeg);
+}
+.imagen-animal-3 {
+    background-image: url(../images/erizo-bolita.jpeg);
+}
+.imagen-animal-4{
+    background-image: url(../images/erizo-madera.jpg);
+}
+
+.imagen-animal-5{
+    background-image: url(../images/erizo-manos.jpeg);
+}
+
+.imagen-animal-6{
+    background-image: url(../images/roedor-1.jpeg);
+}
+.imagen-animal-7{
+    background-image: url(../images/huron-.jpg);
+}
+.imagen-animal-8{
+    background-image: url(../images/roedor-4-coba-2.jpeg);
+}
+.imagen-animal-9{
+    background-image: url(../images/roedor-4-coba.jpeg);
+}
+.imagen-animal-10{
+    background-image: url(../images/roedor-3-cone.jpeg);
+}
+.imagen-animal-11{
+    background-image: url(../images/conejo-blanco.jpeg);
+}
+.imagen-animal-12{
+    background-image: url(../images/erizo-verde.jpg);
+}
+.imagen-animal-13{
+    background-image: url(../images/huron-blanc.jpg);
+}
+.imagen-animal-14{
+    background-image: url(../images/huron-cargado.jpg);
+}
+.imagen-animal-15{
+    background-image: url(../images/huron-pechera.jpg);
+}
+.imagen-animal-16{
+    background-image: url(../images/huron-2.jpg);
+}
